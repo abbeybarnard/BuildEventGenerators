@@ -1,12 +1,21 @@
 #!/bin/bash
 
+<<<<<<< HEAD
 ##use conatiner instructions below
 ##https://docs.google.com/document/d/1NIrI9BW4Vxw-zYUvec-hsDPSAluAqLuumdj27TG5cic/edit?usp=sharing
 
 ####################################################################
+=======
+# Generate NEUT events
+neutroot2 neut_uboone_num.card numi.ub.num.neut_5_4_0_1.root
+
+# Prepare NEUT events for Nuisance
+PrepareNEUT -i numi.ub.num.neut_5_4_0_1.root -o NEUT.prep.root -G -f abbey_combined_flux.root,nue_CV_AV_TPC_5MeV_bin
+>>>>>>> 5c5b685 (Long overdue commit)
 
 ## Then run the commands below
 
+<<<<<<< HEAD
 cd ../neut_container/interactive
 
 ## for some reason this command is not working for neut
@@ -58,4 +67,10 @@ mv ../neut_container/interactive/NEUT.flat.root samples/
 #rm bnb.ub.num.neut_5_4_0_1.root
 ##rm bnb.ub.num.neut_5_4_0_1.prep.root
 #mv NEUT.prep.root samples
+=======
+# Remove unnecessary files
+rm numi.ub.num.neut_5_4_0_1.root
+rm numi.ub.num.neut_5_4_0_1.prep.root
+mv NEUT.prep.root samples
+>>>>>>> 5c5b685 (Long overdue commit)
 #rm hEnumu_cv_o.root

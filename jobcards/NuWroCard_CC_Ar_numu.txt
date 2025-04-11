@@ -11,7 +11,7 @@ number_of_test_events = 10000
 
 # The number of equally weighted events to be saved:
 
-number_of_events   = 10000
+number_of_events   = 500000
  
 # Control the random seed persistence:
 
@@ -22,6 +22,7 @@ random_seed= 0   // 0 - use time(NULL) as a seed for random number generator
 ################################################################
 #
 # Beam specification 
+
 #
 ################################################################
 
@@ -32,7 +33,7 @@ beam_type = 5       // beam flux
 
 # Incoming neutrino beam
 
-beam_particle = 14    // neutrino PDG
+beam_particle = 12    // neutrino PDG
 
 # It is convenient to include one of the predefined beam specifications
 # with the @ char
@@ -50,8 +51,8 @@ beam_particle = 14    // neutrino PDG
 ################################################################
 
 #@target/proton.txt
-@target/Ar.txt
 #@target/C.txt
+@target/ar.txt
 #@target/CH.txt
 #@target/ND280_975.txt
 #@target/proton.txt
@@ -146,7 +147,7 @@ sf_pb = 1
 cc_smoothing=0 
 #cc_smoothing=1 // dont't try impossible qel reaction: nu+n
 
-# The default
+� The degault
 # qel_kinematics   = 0  // relativistic (default)
 # qel_kinematics   = 1  //
 # qel_kinematics   = 2  //
